@@ -1,0 +1,182 @@
+ :root {
+   --background-color: #f8f9fa;
+   --container-bg: #ffffff;
+   --primary-text: #212529;
+   --secondary-text: #6c757d;
+   --border-color: #dee2e6;
+   --accent-blue: #007bff;
+   --accent-blue-hover: #0056b3;
+   --accent-red: #dc3545;
+   --accent-red-hover: #c82333;
+   --status-active-bg: #e9f7ef;
+   --status-active-text: #28a745;
+   --status-inactive-bg: #f8f9fa;
+   --status-inactive-text: #6c757d;
+   --shadow: 0 4px 8px rgba(247, 10, 10, 0.05);
+ }
+
+ body {
+   margin: 0;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+   background-color:#fffafb;
+   color: var(--primary-text);
+ }
+
+ .container {
+   max-width: 1350px;
+   margin: 3rem auto;
+   padding: 3rem;
+   background-color: #dee2e6;
+   border-radius: 28px;
+   box-shadow: var(--accent-red);
+   border-style:double;
+ }
+
+ .header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 2rem;
+   padding-bottom: 1.5rem;
+   border-bottom: 4px solid var(--accent-blue);
+ }
+
+ .header-title h2 {
+   color: #ee2424;
+   margin: 0;
+   font-size: 4rem;
+   font-weight: 500;
+ }
+.header-title h2:hover{
+  color:blue;
+  transform: translateY(-5px);
+}
+ .header-stats {
+   color: var(--secondary-text);
+   display: flex;
+   gap: 4.5rem;
+   margin-top: 2.5rem;
+ }
+
+ .header-stats p {
+   color:darkblue;
+   margin: 0;
+   font-size: 1.5rem;
+ }
+ .header-stats p:hover{
+  color: var(--accent-red);
+  transform:translateY(-3px);
+ }
+
+ .btn-delete-all {
+   font-size: 1.5rem;
+   background-color: var(--accent-red);
+   color: white;
+   width: 160px;
+   height: 80px;
+   border-radius: 28px;
+ }
+
+ .btn-delete-all:hover {
+   background-color: var(--accent-red-hover);
+   transform: translateY(-3px);
+ }
+
+ .btn-action2 {
+   background-color: var(--accent-red);
+   color: rgb(11, 255, 226);
+   border: none;
+   padding: 0.75rem;
+   border-radius: 28px;
+   cursor: pointer;
+ }
+
+ .btn-action2:hover {
+   background-color: var(--accent-red-hover);
+   transform: translateY(-2px);
+ }
+
+ .btn-action2 i {
+   font-size: 1.2rem;
+   color: white;
+ }
+
+ .btn-action {
+   background-color: var(--accent-blue);
+   border-radius: 28px;
+ }
+
+ .btn-action:hover {
+   background-color: var(--accent-blue-hover);
+   transform: translateY(-3px);
+ }
+
+ .btn-toggle {
+   color: #fafbfb;
+   background-color: var(--secondary-text);
+ }
+
+ .btn-toggle:hover {
+   color: #dee2e6;
+   background-color: var(--accent-red-hover);
+ }
+
+ .user-table {
+   width: 100%;
+   border-collapse:collapse;
+   text-align: center;
+ }
+
+ .user-table th,
+ .user-table td {
+   padding: 1.0rem;
+   vertical-align: middle;
+ }
+
+
+ .user-table th {
+   color: black;
+   font-size: 1.1rem;
+   font-weight: 700;
+   background-color:whitesmoke;
+   text-transform: uppercase;
+   border-bottom: 2.5px solid var(--accent-blue);
+ }
+
+ .user-table tbody tr {
+   border-bottom: 0.5px solid var(--accent-red);
+   transition: background-color 0.15s ease-in-out;
+ }
+
+ .user-table tbody tr:last-child {
+   border-bottom: none;
+ }
+
+ .user-table tbody tr:hover {
+   background-color: #b5f493;
+ }
+
+ .status-active,
+ .status-inactive {
+   padding: 7px 15px;
+   border-radius: 17px;
+   font-size: 0.9rem;
+   font-weight: 500;
+   text-align: center;
+ }
+
+ .status-active {
+   background-color: var(--status-active-bg);
+   color: var(--status-active-text);
+ }
+
+ .status-inactive {
+   background-color: var(--status-inactive-bg);
+   color: var(--status-inactive-text);
+ }
+
+ .actions-cell {
+   display: flex;
+   gap: 0.95rem;
+   justify-content: center;
+ }

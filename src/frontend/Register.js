@@ -138,7 +138,7 @@ function Register() {
 
                         <div className="input-field">
                             <label htmlFor="email">Email:</label>
-             +               <Field id="email" name="email" type="email" placeholder="Email" />
+                            <Field id="email" name="email" type="email" placeholder="Email" />
                             <ErrorMessage name="email" component="div" className="error" />
                         </div>
 

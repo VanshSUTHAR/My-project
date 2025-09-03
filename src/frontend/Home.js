@@ -35,7 +35,7 @@ const Home = () => {
                 <Link to="/Register">register</Link>
             </>
         )}
-        <button onClick={handleLogout}>LOGOUTx`</button>
+        <button onClick={handleLogout}>LOGOUT</button>
     </nav>
         <div className="scrollable-section">
       
